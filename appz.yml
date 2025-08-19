@@ -1,15 +1,15 @@
 app:
     name: Vault
     code: VAULT
-    notify: skchekon@ecloudcontrol.com
+    notify: rniranjan@ecloudcontrol.com
 build:
     version: 0.4
     env: DEV
     build_file: none
     output_files: output/*.zip
-    image_template: vault-1.2
+    image_template: vault-1.19
 deploy:
-    context: skchekon/DEV
+    context: niranjan-ragi/DEV
     type: statefulset
     ingress: none
     replicas: 1
