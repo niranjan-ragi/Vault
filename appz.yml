@@ -11,7 +11,7 @@ build:
     image_template: vault-1.19
 
 deploy:
-    context: mbk-test/PROD
+    context: niranjan-ragi/PROD
     type: statefulset
     ingress: none
     replicas: 1
