@@ -1,17 +1,17 @@
 app:
     name: Vault
     code: VAULT
-    notify: appz@ecloudcontrol.com
+    notify: rniranjan@ecloudcontrol.com
 
 build:
     version: 0.4
-    env: DEV
+    env: PROD
     build_file: none
     output_files: output/*.zip
-    image_template: vault-1.2
+    image_template: vault-1.19
 
 deploy:
-    context: alpha/DEV
+    context: mbk-test/PROD
     type: statefulset
     ingress: none
     replicas: 1
@@ -30,6 +30,5 @@ volumes:
     size: 5Gi
 
 properties:
-    revision: 27
     ENABLE_AUTO_PASSWORD: True
-    
+    revision: 36
