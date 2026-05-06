@@ -11,7 +11,7 @@ build:
     image_template: vault-1.2
 
 deploy:
-    context: tradeideas/PROD
+    context: plantmaster/DEV
     type: statefulset
     ingress: none
     replicas: 1
@@ -33,4 +33,4 @@ volumes:
 
 properties:
     ENABLE_AUTO_PASSWORD: False
-    revision: 67
+    revision: 0
