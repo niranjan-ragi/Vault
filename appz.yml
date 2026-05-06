@@ -1,11 +1,11 @@
 app:
     name: Vault
     code: VAULT
-    notify: app@ecloudcontrol.com
+    notify: rniranjan@ecloudcontrol.com
 
 build:
-    version: 0.4
-    env: PROD
+    version: 1.2
+    env: DEV
     build_file: none
     output_files: output/*.zip
     image_template: vault-1.2
