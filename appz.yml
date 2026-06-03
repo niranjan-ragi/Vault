@@ -18,6 +18,13 @@ deploy:
     port:
     - 8200
     - 80
+    nodeSelector:
+      nodepool: toplist
+    tolerations:
+      - key: nodepool
+        operator: Equal
+        value: toplist
+        effect: NoSchedule
 
 volumes:
   - claim: vault-home
